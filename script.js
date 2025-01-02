@@ -60,7 +60,7 @@ async function getChapters(day) {
   let bibleInAYear = [];
   let todaysChapters = [];
 
-  await fetchData('./bible-in-a-year.json')
+  await fetchData('./bibleinayear.json')
     .then((b) => (bibleInAYear = b.chronological))
     .catch((e) => console.error(e));
 
