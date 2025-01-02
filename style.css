@@ -1,0 +1,199 @@
+/*****************
+    Reset/Base
+******************/
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: auto;
+  min-height: 100vh;
+  position: relative;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input:not([type='checkbox']),
+textarea {
+  appearance: none;
+  font: inherit;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/*****************
+    Site Styles
+******************/
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Work Sans', Inter, Helvetica, Roboto, sans-serif;
+}
+
+/* Typography */
+p {
+  font-size: 18px;
+}
+
+a {
+  font-size: inherit;
+  color: #06d;
+  text-decoration: 2px solid underline transparent;
+}
+a:hover {
+  text-decoration-color: #06d;
+}
+
+/* Container */
+.container {
+  padding: 30px 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Header */
+.header {
+  position: relative;
+  padding: 7em 15px;
+  text-align: center;
+  background-image: url('./images/boy-reading-bible.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+.header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: #000000bb;
+  z-index: -1;
+}
+
+.header h1,
+.header p {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.header h1 span {
+  color: greenyellow;
+}
+
+/* Result Card */
+.card {
+  padding: 0 0 2em;
+  background-color: #fff;
+  opacity: 0.9;
+  background-image: radial-gradient(#ccc 1.25px, transparent 1.25px), radial-gradient(#ccc 1.25px, #fff 1.25px);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: 1px solid #071630;
+  box-shadow: 0px 6px 15px #07163040;
+  max-width: 600px;
+}
+
+.date {
+  margin-bottom: 2em;
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 1.5;
+}
+.date i.bi {
+  color: grey;
+}
+.date time {
+  font-weight: 700;
+}
+
+.day {
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1rem 0;
+  background-color: #000435;
+  color: #fff;
+}
+.day span {
+  color: greenyellow;
+}
+
+.chapters {
+  font-size: 2.75rem;
+  font-weight: 700;
+  margin: 1.5em 0;
+}
+
+.card-sm {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  border: 2px solid #f0f0ff;
+  background-color: #f5f5ff;
+  padding: 1em 0.5em;
+  border-radius: 8px;
+}
+.card-sm > p {
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+.check-control {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+}
+.check-control input {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background-color: #f7f7f7;
+  border-top: 1px solid #eee;
+  color: grey;
+  text-align: center;
+  font-family: monospace;
+  margin-top: auto;
+  width: 100%;
+  padding: 1em;
+}

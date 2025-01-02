@@ -1,0 +1,24 @@
+{
+  "chronological": [
+    { "day": 1, "chapters": ["Genesis 1-4"] },
+    { "day": 2, "chapters": ["Genesis 5-8"] },
+    { "day": 3, "chapters": ["Genesis 9-12"] },
+    { "day": 4, "chapters": ["Genesis 13-16"] },
+    { "day": 5, "chapters": ["Genesis 17-20"] },
+    { "day": 6, "chapters": ["Genesis 21-24"] },
+    { "day": 7, "chapters": ["Genesis 25-28"] },
+    { "day": 8, "chapters": ["Genesis 29-32"] },
+    { "day": 9, "chapters": ["Genesis 33-36"] },
+    { "day": 10, "chapters": ["Genesis 37-40"] },
+    { "day": 11, "chapters": ["Genesis 41-44"] },
+    { "day": 12, "chapters": ["Genesis 44-47"] },
+    { "day": 13, "chapters": ["Genesis 48-50", "Exodus 1"] },
+    { "day": 14, "chapters": ["Exodus 2-5"] },
+    { "day": 15, "chapters": ["Exodus 6-9"] },
+    { "day": 16, "chapters": ["Exodus 10-13"] },
+    { "day": 17, "chapters": ["Exodus 14-17"] },
+    { "day": 18, "chapters": ["Exodus 18-21"] },
+    { "day": 19, "chapters": ["Exodus 22-25"] },
+    { "day": 20, "chapters": ["Exodus 26-29"] }
+  ]
+}

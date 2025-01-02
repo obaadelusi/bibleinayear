@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible in a Year 2025</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Bible in a Year <span>2025</span></h1>
+        <p>Complete the Holy Bible in 365 days.</p>
+    </header>
+    <section class="container">
+        <div class="date" id="todaysDate">
+            <i class="bi bi-calendar-event-fill"></i> TODAY: <br>
+        </div>
+        <div class="card" id="result">
+            <h2 class="day" id="day"></h2>
+            <ul class="chapters" id="chapters"></ul>
+            <a href="https://www.biblegateway.com/passage" target="_blank" id="goToBible">
+                <i class="bi bi-eye"></i> Start reading...
+            </a>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="card-sm">
+            <p>Have you read the Bible today?</p>
+            <div class="check-control">
+                <input type="checkbox" id="isReadCheck">
+                <b>YES</b>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        &copy; Made by <a href="https://obaadelusi.github.io">Oba</a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
