@@ -1,5 +1,18 @@
 document.addEventListener('DOMContentLoaded', async () => await displayContent());
 
+// Confetti
+const isReadCheck = document.getElementById('isReadCheck');
+isReadCheck.addEventListener('change', (e) => {
+  if (e.target.checked) {
+    // trigger confetti
+    confetti({
+      particleCount: 200,
+      spread: 100,
+      origin: { y: 0.8 },
+    });
+  }
+});
+
 async function displayContent() {
   const TODAY = new Date();
   const DAYS_IN_YEAR = numberOfDays(TODAY.getFullYear);
