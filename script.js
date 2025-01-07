@@ -51,6 +51,9 @@ async function displayContent() {
   resultEl.appendChild(dayEl);
   resultEl.appendChild(chaptersEl);
   resultEl.appendChild(goToBibleEl);
+
+  // Update document title
+  document.title = `Day ${CURRENT_DAY} of ${DAYS_IN_YEAR} | Bible in a Year`;
 }
 
 /**
