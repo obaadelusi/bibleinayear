@@ -1,5 +1,5 @@
 {
-  "chronological": [
+  "openheavens": [
     { "day": 1, "chapters": ["Genesis 1-4"] },
     { "day": 2, "chapters": ["Genesis 5-8"] },
     { "day": 3, "chapters": ["Genesis 9-12"] },
@@ -7,11 +7,11 @@
     { "day": 5, "chapters": ["Genesis 18-20"] },
     { "day": 6, "chapters": ["Genesis 21-23"] },
     { "day": 7, "chapters": ["Genesis 24-25"] },
-    { "day": 8, "chapters": ["Genesis 26-32"] },
-    { "day": 9, "chapters": ["Genesis 33-36"] },
-    { "day": 10, "chapters": ["Genesis 37-40"] },
-    { "day": 11, "chapters": ["Genesis 41-44"] },
-    { "day": 12, "chapters": ["Genesis 44-47"] },
+    { "day": 8, "chapters": ["Genesis 26-28"] },
+    { "day": 9, "chapters": ["Genesis 29-31"] },
+    { "day": 10, "chapters": ["Genesis 32-35"] },
+    { "day": 11, "chapters": ["Genesis 36-38"] },
+    { "day": 12, "chapters": ["Genesis 39-41"] },
     { "day": 13, "chapters": ["Genesis 48-50", "Exodus 1"] },
     { "day": 14, "chapters": ["Exodus 2-5"] },
     { "day": 15, "chapters": ["Exodus 6-9"] },
