@@ -40,7 +40,15 @@
     { "day": 38, "chapters": ["Numbers 1-2"] },
     { "day": 39, "chapters": ["Numbers 3-4"] },
     { "day": 40, "chapters": ["Numbers 5-6"] },
-    { "day": 41, "chapters": ["Numbers 7-9"] },
-    { "day": 42, "chapters": ["Numbers 10-12"] }
+    { "day": 41, "chapters": ["Numbers 7"] },
+    { "day": 42, "chapters": ["Numbers 8-10"] },
+    { "day": 43, "chapters": ["Numbers 11-13"] },
+    { "day": 44, "chapters": ["Numbers 14-15"] },
+    { "day": 45, "chapters": ["Numbers 16-18"] },
+    { "day": 46, "chapters": ["Numbers 19-21"] },
+    { "day": 47, "chapters": ["Numbers 22-24"] },
+    { "day": 48, "chapters": ["Numbers 25-26"] },
+    { "day": 49, "chapters": ["Numbers 27-29"] },
+    { "day": 50, "chapters": ["Numbers 30-32"] }
   ]
 }
