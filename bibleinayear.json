@@ -50,6 +50,23 @@
     { "day": 48, "chapters": ["Numbers 25-26"] },
     { "day": 49, "chapters": ["Numbers 27-29"] },
     { "day": 50, "chapters": ["Numbers 30-32"] },
-    { "day": 51, "chapters": ["Deuteronomy 1-2"] }
+    { "day": 51, "chapters": ["Numbers 33-36"] },
+    { "day": 52, "chapters": ["Deuteronomy 1-2"] },
+    { "day": 53, "chapters": ["Deuteronomy 3-4"] },
+    { "day": 54, "chapters": ["Deuteronomy 5-8"] },
+    { "day": 55, "chapters": ["Deuteronomy 9-11"] },
+    { "day": 56, "chapters": ["Deuteronomy 12-15"] },
+    { "day": 57, "chapters": ["Deuteronomy 16-19"] },
+    { "day": 58, "chapters": ["Deuteronomy 20-22"] },
+    { "day": 59, "chapters": ["Deuteronomy 23-25"] },
+    { "day": 60, "chapters": ["Deuteronomy 26-27"] },
+    { "day": 61, "chapters": ["Deuteronomy 28-29"] },
+    { "day": 62, "chapters": ["Deuteronomy 30-32"] },
+    { "day": 63, "chapters": ["Deuteronomy 33-34"] },
+    { "day": 64, "chapters": ["Joshua 1-2"] },
+    { "day": 65, "chapters": ["Joshua 1-2"] },
+    { "day": 66, "chapters": ["Joshua 1-2"] },
+    { "day": 67, "chapters": ["Joshua 1-2"] },
+    { "day": 68, "chapters": ["Joshua 1-2"] }
   ]
 }
