@@ -101,9 +101,14 @@
     { "day": 99, "chapters": ["1 Kings 1-2"] },
     { "day": 100, "chapters": ["1 Kings 3-5"] },
     { "day": 101, "chapters": ["1 Kings 6-7"] },
-    { "day": 102, "chapters": ["1 Kings 8-10"] },
-    { "day": 103, "chapters": ["1 Kings 11-13"] },
-    { "day": 104, "chapters": ["1 Kings 14-15"] },
-    { "day": 105, "chapters": ["1 Kings 16-18"] }
+    { "day": 102, "chapters": ["1 Kings 8-9"] },
+    { "day": 103, "chapters": ["1 Kings 10-12"] },
+    { "day": 104, "chapters": ["1 Kings 13-15"] },
+    { "day": 105, "chapters": ["1 Kings 16-18"] },
+    { "day": 106, "chapters": ["1 Kings 19-20"] },
+    { "day": 107, "chapters": ["1 Kings 21-22"] },
+    { "day": 108, "chapters": ["2 Kings 1-3"] },
+    { "day": 109, "chapters": ["2 Kings 4-6"] },
+    { "day": 110, "chapters": ["2 Kings 7-9"] }
   ]
 }
