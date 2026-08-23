@@ -12,16 +12,35 @@
 
 <body>
     <header class="header">
-        <h1>Bible in a Year <span>2025</span></h1>
+        <h1>Bible in a Year <span>2026</span></h1>
         <p>Complete the Holy Bible in 365 days.</p>
     </header>
     <section class="container">
-        <div class="date" id="todaysDate">
-            <i class="bi bi-calendar-event-fill"></i> TODAY: <br>
-        </div>
         <div class="card" id="result">
-            <h2 class="day" id="day"></h2>
+            <div class="card-header" id="cardHeader">
+                <button id="prevDayBtn" class="nav-btn" aria-label="Previous Day"><i class="bi bi-chevron-left"></i></button>
+                <div class="card-title">
+                    <h2 class="day" id="day"></h2>
+                    <div class="date" id="todaysDate"></div>
+                    <button id="jumpToTodayBtn" class="jump-today-btn" style="display: none;" aria-label="Go to Today" title="Go back to Today">
+                        <i class="bi bi-arrow-counterclockwise"></i>
+                    </button>
+                </div>
+                <button id="nextDayBtn" class="nav-btn" aria-label="Next Day"><i class="bi bi-chevron-right"></i></button>
+            </div>
+            <div id="relativeDayPill" class="relative-day-pill" style="display: none;"></div>
             <ul class="chapters" id="chapters"></ul>
+            <div class="translation-control" id="translationControl">
+                <label for="translationSelect">Translation:</label>
+                <select id="translationSelect">
+                    <option value="NKJV">NKJV</option>
+                    <option value="KJV">KJV</option>
+                    <option value="NIV">NIV</option>
+                    <option value="ESV">ESV</option>
+                    <option value="NLT">NLT</option>
+                    <option value="AMP">AMP</option>
+                </select>
+            </div>
             <a href="https://www.biblegateway.com/passage" target="_blank" id="goToBible">
                 <i class="bi bi-eye"></i> Start reading...
             </a>
@@ -35,12 +54,26 @@
                 <input type="checkbox" id="isReadCheck">
                 <b>YES</b>
             </div>
+            <button id="viewProgressBtn" class="progress-btn">View Yearly Progress</button>
         </div>
     </section>
 
+    <div id="progressModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span id="closeModalBtn" class="close">&times;</span>
+            <h2>Yearly Progress</h2>
+            <div class="grid-legend">
+                <span class="legend-item"><span class="box read"></span> Read</span>
+                <span class="legend-item"><span class="box missed"></span> Missed</span>
+                <span class="legend-item"><span class="box future"></span> Future</span>
+            </div>
+            <div class="grid-container" id="progressGrid"></div>
+        </div>
+    </div>
+
 
     <footer class="footer">
-        &copy; Made by <a href="https://obaadelusi.github.io">Oba</a>
+        &copy; Made by <a href="https://obafunsho.com">Oba</a>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
     <script src="script.js"></script>

@@ -17,6 +17,8 @@ body {
   margin: auto;
   min-height: 100vh;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 img,
@@ -82,7 +84,7 @@ a:hover {
 /* Header */
 .header {
   position: relative;
-  padding: 7em 15px;
+  padding: 6em 15px;
   text-align: center;
   background-image: url('./images/boy-reading-bible.jpg');
   background-repeat: no-repeat;
@@ -117,10 +119,11 @@ a:hover {
 .card {
   padding: 0 0 2em;
   background-color: #fff;
-  opacity: 0.9;
   background-image: radial-gradient(#ccc 1.25px, transparent 1.25px), radial-gradient(#ccc 1.25px, #fff 1.25px);
   background-size: 50px 50px;
-  background-position: 0 0, 25px 25px;
+  background-position:
+    0 0,
+    25px 25px;
   text-align: center;
   border-radius: 12px;
   margin: 0 auto;
@@ -131,7 +134,6 @@ a:hover {
 }
 
 .date {
-  margin-bottom: 2em;
   display: block;
   width: 100%;
   text-align: center;
@@ -141,24 +143,104 @@ a:hover {
   color: grey;
 }
 .date time {
-  font-weight: 700;
+  font-weight: 600;
+  color: lightgray;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000435;
+  color: #fff;
+  padding: 0 1rem;
+}
+
+.card-title {
+  position: relative;
+  padding: 1em 0;
+  flex-grow: 1;
+}
+
+.jump-today-btn {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: greenyellow;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: opacity 0.2s;
+}
+
+.jump-today-btn:hover {
+  opacity: 0.8;
 }
 
 .day {
   font-size: 1.25rem;
   font-weight: 600;
-  padding: 1rem 0;
-  background-color: #000435;
   color: #fff;
+  margin: 0;
 }
 .day span {
   color: greenyellow;
 }
 
+.nav-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.nav-btn:hover {
+  opacity: 0.8;
+}
+
+.nav-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.relative-day-pill {
+  display: inline-block;
+  background-color: #000435;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.3em 1em;
+  border-radius: 20px;
+  margin-top: 1.5em;
+  margin-bottom: -0.5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .chapters {
-  font-size: 2.75rem;
+  font-size: calc(1.5rem + 1vw);
   font-weight: 700;
-  margin: 1.5em 0;
+  margin: 1em 0;
+}
+
+.translation-control {
+  margin: 1em 0 1.5em;
+  font-size: 1rem;
+}
+.translation-control select {
+  font-size: 1rem;
+  padding: 0.3em 0.5em;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-left: 0.5em;
+  background-color: #fff;
+  cursor: pointer;
 }
 
 .card-sm {
@@ -169,6 +251,7 @@ a:hover {
   background-color: #f5f5ff;
   padding: 1em 0.5em;
   border-radius: 8px;
+  font-size: 0.75rem;
 }
 .card-sm > p {
   margin-bottom: 0.5em;
@@ -184,6 +267,107 @@ a:hover {
   width: 25px;
   height: 25px;
   cursor: pointer;
+}
+
+.progress-btn {
+  margin-top: 1em;
+  background-color: transparent;
+  border: 1px solid #000435;
+  color: #000435;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.progress-btn:hover {
+  background-color: #000435;
+  color: #fff;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover {
+  color: #000;
+}
+.grid-legend {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0;
+  font-size: 0.85rem;
+}
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.legend-item .box {
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+.legend-item .box.read { background-color: #4caf50; }
+.legend-item .box.missed { background-color: #e0e0e0; }
+.legend-item .box.future { background-color: #f9f9f9; border: 1px solid #ddd; }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15px, 1fr));
+  gap: 3px;
+  margin-top: 10px;
+}
+.grid-box {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+.grid-box:hover {
+  transform: scale(1.2);
+}
+.grid-box.read {
+  background-color: #4caf50;
+}
+.grid-box.missed {
+  background-color: #e0e0e0;
+}
+.grid-box.future {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  cursor: not-allowed;
 }
 
 /* Footer */
